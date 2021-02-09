@@ -6,7 +6,11 @@ function PLUGIN:ClockworkAddSharedVars(globalVars, playerVars)
 	end;
 end;
 
---There is no limit value.
+function PLUGIN:AddStackedVar(name, default, )
+
+
+end;
+
 
 /////////////////////////////////
 -- Clockwork.config:Get("stackedvars_power"):Get()^#StackedVarsList MUST ALWAYS BE INCLUDED BETWEEN 0 AND 2^64
@@ -34,13 +38,3 @@ StackedVarsDefaultValueListPowerCst = { --Only used if Clockwork.config:Get("sta
 	0,
 	2
 }
-
--- if Clockwork.config:Get("stackedvars_power"):Get() <= 2 then
-	-- if #StackedVarsList != #StackedVarsDefaultValueListPower2 then
-		-- print("ULTRA ERROR t1");
-	-- end;
--- else
-	-- if #StackedVarsList != #StackedVarsDefaultValueListPower2 or #StackedVarsDefaultValueListPower2 != #StackedVarsDefaultValueListPowerCst or #StackedVarsList != #StackedVarsDefaultValueListPowerCst then
-		-- print("ULTRA ERROR t2");
-	-- end;
--- end;
